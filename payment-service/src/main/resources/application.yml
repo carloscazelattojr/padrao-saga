@@ -10,7 +10,7 @@ spring:
       payment-fail: payment-fail
     consumer:
       group-id: payment-group
-      auto-offset-reset:
+      auto-offset-reset: latest
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5433}/${DB_NAME:payment-db}
@@ -28,3 +28,5 @@ logging:
     org:
       apache:
         kafka: OFF
+#      springframework:
+#        kafka: DEBUG

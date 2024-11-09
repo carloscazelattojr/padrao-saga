@@ -10,7 +10,7 @@ spring:
       inventory-fail: inventory-fail
     consumer:
       group-id: inventory-group
-      auto-offset-reset:
+      auto-offset-reset: latest
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5434}/${DB_NAME:inventory-db}
@@ -28,3 +28,5 @@ logging:
     org:
       apache:
         kafka: OFF
+#      springframework:
+#        kafka: DEBUG
