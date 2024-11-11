@@ -10,9 +10,11 @@ spring:
     consumer:
       group-id: order-group
       auto-offset-reset: latest
+
   data:
-    database: admin
-    uri: ${MONGO_DB_URI:mongodb://admin:123456@localhost:21017}
+    mongodb:
+      database: admin
+      uri: ${MONGO_DB_URI:mongodb://admin:123456@localhost:27017}
 
 logging:
   level:

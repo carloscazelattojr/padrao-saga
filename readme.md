@@ -9,6 +9,7 @@
 * **Spring Boot 3**
 * **Apache Kafka**
 * **API REST**
+* **PGAdmin**
 * **PostgreSQL**
 * **MongoDB**
 * **Docker**
